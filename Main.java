@@ -10,8 +10,7 @@ public class Main {
         int input = 10;
         int output = 10;
         //String fileName = args[0];
-        String fileName = "fsm.txt";
-        util.createFSMFile(fileName,state,input,output);
+        String fileName = "src/bbtas.kiss2.fsm";
         Graph graph = util.toGraph(fileName);
         Atlas atlas = new Atlas();
         System.out.println("atlas: " + atlas.run(graph).length());
